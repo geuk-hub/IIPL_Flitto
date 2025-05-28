@@ -51,17 +51,6 @@ Before running the following script, make sure to configure the following enviro
 - **ROOT**: Set this to the full path of your `IIPL_Flitto` repository.
 - **DIARIZENET_CHECKPOINT**: Set this to the full path of your `DiarizeNet` checkpoint folder (the directory where you downloaded the DiarizeNet checkpoint).
 
-**Important:**  
-This project uses PyTorch built with CUDA 11.7 by default.  
-If your system's NVIDIA driver supports CUDA 12.x (for example, CUDA 12.4), you must install a compatible version of PyTorch before running the script. For example:
-```
-pip install torch==2.2.2 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-conda install -c conda-forge ffmpeg
-```
-
-If your system uses a different CUDA version, make sure to install the matching PyTorch version accordingly.  
-Refer to the [official PyTorch installation guide](https://pytorch.org/get-started/locally/) for more information.
-
 ```
 bash run.sh
 ```
