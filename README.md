@@ -28,7 +28,7 @@ cd DiarizeNet && pip install -r requirements.txt
 pip install Cython librosa pesq pystoi pydub tqdm toml colorful mir_eval torch_complex "numpy<2" "accelerate<1.0.0" ffmpeg --no-deps jieba Mecab
 
 conda install -c conda-forge compilers
-pip install pkuseg nlptutti torch==2.1.2 transformers soynlp
+pip install pkuseg nlptutti transformers soynlp
 
 pip install -U openai-whisper
 ```
