@@ -42,7 +42,7 @@ Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
 
-Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
 
 # DeepVoc+DiarizeNet+STT
 
