@@ -5,7 +5,6 @@ IIPL_Flitto is a comprehensive speech and text processing toolkit. This reposito
 ## Environment
 
 - **OS**: Ubuntu 24.04.2
-- **Python**: 3.9.21
 - **CUDA Toolkit**: 11.7
 - **GPU Driver**: NVIDIA-SMI 570.144 (CUDA Version 12.8)
 
@@ -95,6 +94,17 @@ Before running the following script, make sure to configure the following enviro
 python /AdaptiVoice/run.py
 ```
 
+## Metric
+
+Before running the following script, make sure to configure the following environment variables:
+- **root**: Set this to the full path of your `IIPL_Flitto` repository.
+- **Crossview-AP_ckpt**: Put your CrossView-AP checkpoint files into `crossview-ap` folder.
+- **Crossview-AP_datasets**: Put your CrossView-AP datasetse files into `crossview-ap` folder.
+  
+```
+python /metric/crossview-ap/code/evaluate_all.py
+```
+
 ## Machine Translation
 
 1. Install Package
@@ -128,7 +138,10 @@ bash /metric/bleu_comet.sh
 1. Install Package
 
 ```
-pip install unsloth
+conda create -n ec python=3.12
+conda activate ec
+
+pip install unsloth hgtk
 ```
 
 2. run
