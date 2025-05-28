@@ -88,7 +88,7 @@ conda install -c conda-forge ffmpeg
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
-- **AdaptiVoice_ckpt**: Set this to the full path of your checkpoints folder.
+- **AdaptiVoice_ckpt**: Set this to the full path of your `AdaptiVoice` checkpoints folder.
   
 ```
 python /AdaptiVoice/run.py
@@ -102,14 +102,21 @@ python /AdaptiVoice/run.py
 conda create -n mt python=3.9
 conda activate mt
 
+cd Text_Processing/Machine_Translation
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install numpy regex sacrebleu tensorboard matplotlib pandas cython setuptools
+pip install numpy regex sacrebleu tensorboard matplotlib pandas cython setuptools pyarrow sacremoses tensorboardX unbabel-comet
 pip install pip==23.3.1
 conda install -c conda-forge gxx_linux-64
+pip install --editable ./
 conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
 ```
 
 2. metric
+Before running the following script, make sure to configure the following environment variables:
+
+- **root**: Set this to the full path of your `IIPL_Flitto` repository.
+- **machin_translation_ckpt**: Set this to the full path of your `Machine Translation` checkpoints folder.
+  
 ```
 bash /metric/bleu_comet.sh
 ```
