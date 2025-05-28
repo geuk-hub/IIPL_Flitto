@@ -2,6 +2,13 @@
 
 IIPL_Flitto is a comprehensive speech and text processing toolkit. This repository provides a collection of modules and scripts for advanced speaker diarization, speech enhancement modeling, speech-to-text (STT), text-to-speech (TTS) and text processing. The toolkit is designed to facilitate research and development in automatic speech recognition (ASR), speaker identification, and natural language processing (NLP) tasks.
 
+## Environment
+
+- **OS**: Ubuntu 24.04.2
+- **Python**: 3.9.21
+- **CUDA Toolkit**: 11.7
+- **GPU Driver**: NVIDIA-SMI 570.144 (CUDA Version 12.8)
+
 # Install
 1. Clone this repository and navigate to IIPL_Flitto folder
 
