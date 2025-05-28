@@ -125,12 +125,19 @@ bash /metric/bleu_comet.sh
 
 ## Error Correction
 
-1. run
+1. Install Package
+
+```
+pip install unsloth
+```
+
+2. run
 
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
 - **model_path**: Set this to the full path of your `Error Correction` checkpoints folder.
+  
 ```
 python /Text_Processing/Error_Correction/LLM_grammer_inference.py
 ```
