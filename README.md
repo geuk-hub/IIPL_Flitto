@@ -45,11 +45,11 @@ pip install -U openai-whisper
 
 Download the [pre-trained DiarizeNet checkpoint](https://www.dropbox.com/scl/fo/uyer0669wfhpvm055v5mf/ACbFAIbVxQbScEPlhhioL0A?rlkey=0hndtmi059oh2r5bh51i0q1op&st=ix16crxu&dl=0).
 
+Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
+
 Download the [Machine Translation Model checkpoint](https://www.dropbox.com/scl/fo/3xle2g3505iydwbw6yqg7/APcyGLXHwL83A2Y3Lu_GaZU?rlkey=i36di9snedlj45vttk6nd0zw9&st=sdhgg06z&dl=0).
 
 Download the [Error Correction Model checkpoint](https://www.dropbox.com/scl/fo/rsl0xailbxcoeiz1ebf5g/AOh-MttVZHLOsO8BH7dc7ZA?rlkey=lta539u6qrqovke5ndodtfsmu&st=3xh1n9xr&dl=0).
-
-Download the [AdaptiVoice Model checkpoint](https://www.dropbox.com/scl/fo/2tifgu6mrwo0akgrn3din/AO5Gdhkg0L90ky0goTbepzI?rlkey=1wlpaknwo8zcmg35ac6fhj1jz&st=apdxg900&dl=0).
 
 ## DeepVoc+DiarizeNet+STT
 
@@ -85,6 +85,7 @@ conda install -c conda-forge ffmpeg
 ```
 
 2. run
+
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
@@ -112,6 +113,7 @@ conda install -c nvidia cuda-toolkit=11.8 cudatoolkit-dev=11.8
 ```
 
 2. metric
+
 Before running the following script, make sure to configure the following environment variables:
 
 - **root**: Set this to the full path of your `IIPL_Flitto` repository.
@@ -119,4 +121,16 @@ Before running the following script, make sure to configure the following enviro
   
 ```
 bash /metric/bleu_comet.sh
+```
+
+## Error Correction
+
+1. run
+
+Before running the following script, make sure to configure the following environment variables:
+
+- **root**: Set this to the full path of your `IIPL_Flitto` repository.
+- **model_path**: Set this to the full path of your `Error Correction` checkpoints folder.
+```
+python /Text_Processing/Error_Correction/LLM_grammer_inference.py
 ```
